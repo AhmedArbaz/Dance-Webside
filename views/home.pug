@@ -1,0 +1,50 @@
+extends base.pug
+//- to ham nay extend kar lia base ka home may ab jo jo khali chora tha block banaya tha ausay fill karain gay 
+block scripts  
+    script(src="/static/index.js")
+    //- To block script may ya script dal di lakin ak block style bhi to tha na aus may kia dalay ga
+
+block style 
+    style
+      include ../static/style.css 
+
+
+block content
+    section#introSection
+        div Welcome to Junaid's Dance Accadmy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Missions
+        div.card 
+          h3 Dance Perfection
+          div.cardBox 
+            div.cardimg 
+             img(src="/static/ultaAdmi.png")
+            div.card-content 
+              p This is the best dance academy of the universe 
+        div.card 
+          h3 Expert Teaching 
+           div.cardBox 
+            div.cardimg 
+             img(src="/static/lady logo.png")
+            div.card-content 
+              p This is the best dance academy of the universe 
+
+        div.card 
+          h3 Dance the way you like 
+           div.cardBox 
+            div.cardimg 
+             img(src="/static/lady.png")
+            div.card-content 
+              p This is the best dance academy of the universe 
+
+
+    sectino#sponsers
+        h2 Our Sponsers 
+        div#sponserimg 
+          img(src="/static/hp logo.png", alt="sponser image" Class="spimages")
+          img(src="/static/microsoftlogo.png", alt="Miscrosoft image" Class="spimages1")
+          img(src="/static/skypelogo.png", alt="Skype image" Class="spimages")
+          img(src="/static/apple logo.png", alt="Apple image" Class="spimages")
+          //- alt vo text hota hay jab ap ka image load nahi hota hay 

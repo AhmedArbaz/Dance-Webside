@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+    margin: 12px 0; 
+    /* top bottom say dia hay margin  */
+    font-size: 50px;
+}
+.container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.myForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.myInput{
+width: 40%;
+padding:10px ;
+margin: 10px ;
+border: 2px solid rgb(100, 69, 69);
+border-radius: 7px;
+font-size: 18px;
+outline: none;
+
+}
+.btn{
+    padding: 12px 16px;
+    border-radius: 8px;
+    font-size: 18px;
+    border: 2px solid rgb(74, 49, 49);
+    color: white;
+    background: rgb(34, 34, 34);
+    margin: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,28 @@
+//- Ya block ka matlab hay kay yaha a sakta hay ab block script matlab js yaha dalo ya fill home .pug may karin gay
+
+doctype html 
+html 
+    head
+        title 
+         | Dance Website
+        link(rel="icon", href="/static/lady.jpg") 
+        block scripts 
+        block style 
+    body 
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/lady.png")
+                    p HDA
+
+                li #[a(href="/") Home]
+                li #[a(href="/") About]
+                li #[a(href="/") Services]
+                li #[a(href="/") Class Info]
+                li #[a(href="/") Contact Us]
+    
+        block content 
+        footer#footer 
+            | CopyWrite 2023 junad'sDance Acadmy.com | All right Reserved  
+        //-  ya banaya hay kay block foot ka matlab ager ap ko footer add karna hay to yaha karo  
+          

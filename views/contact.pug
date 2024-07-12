@@ -1,0 +1,23 @@
+extends base.pug
+//- to ham nay extend kar lia base ka home may ab jo jo khali chora tha block banaya tha ausay fill karain gay 
+block scripts 
+    script(src="/static/index.js")
+    //- To block script may ya script dal di lakin ak block style bhi to tha na aus may kia dalay ga
+
+block style 
+    style
+      include ../static/style.css 
+      include ../static/styleContact.css 
+    //-   contact page may bhi base ko extend kar lia 
+
+block content
+    div.container 
+        h1 Contact Us
+        form(action="/contact", method="post", Class="myForm")
+            input(type="text", Class="myInput", name="name", placeholder="Enter Your name") 
+            input(type="phon", Class="myInput", name="phon", placeholder="Enter Your phon No") 
+            input(type="email", Class="myInput", name="email", placeholder="Enter Your E-mail") 
+            input(type="text", Class="myInput", name="address", placeholder="Enter Your address") 
+            input(type="text", Class="myInput", name="desc", placeholder="Enter Your Concern") 
+            button(Class="btn") 
+                | Submit 

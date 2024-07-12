@@ -1,0 +1,71 @@
+//- index.pug
+doctype html
+html
+  head
+    title 
+      | Dance Website
+    link(rel="icon", href="/static/lady.jpg")
+    style
+      include ../static/style.css 
+    //-   ../ ais ka matlab hay ak step bhar jao Q kay ya views kay folder may hay ab bhar gaya to /static may jao aur phir file nay /style.css may 
+    //- ya file ka name hay jo css file ais may include karna chatay ho like link dis hay
+  body
+    nav#navbar
+        ul
+            div#logo
+              img(src="/static/logo.jpg")
+              p HDA
+
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Content Us]
+
+    section#introSection
+        div Welcome to Junaid's Dance Accadmy 
+        div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+        h2 Our Missions
+        div.card 
+          h3 Dance Perfection
+          div.cardBox 
+            div.cardimg 
+             img(src="/static/ultaAdmi.png")
+            div.card-content 
+              p This is the best dance academy of the universe 
+        div.card 
+          h3 Expert Teaching 
+           div.cardBox 
+            div.cardimg 
+             img(src="/static/lady logo.png")
+            div.card-content 
+              p This is the best dance academy of the universe 
+
+        div.card 
+          h3 Dance the way you like 
+           div.cardBox 
+            div.cardimg 
+             img(src="/static/lady.png")
+            div.card-content 
+              p This is the best dance academy of the universe 
+
+
+    sectino#sponsers
+        h2 Our Sponsers 
+        div#sponserimg 
+          img(src="/static/hp logo.png", alt="sponser image" Class="spimages")
+          img(src="/static/microsoftlogo.png", alt="Miscrosoft image" Class="spimages1")
+          img(src="/static/skypelogo.png", alt="Skype image" Class="spimages")
+          img(src="/static/apple logo.png", alt="Apple image" Class="spimages")
+          //- alt vo text hota hay jab ap ka image load nahi hota hay 
+
+    footer#footer 
+        | CopyWrite 2023 junad'sDance Acadmy.com | All right Reserved 
+    script
+      include ../static/index.js
+    //-   asay hi yaha bhi vohi kia kay ak step bhar phir static may jao vaha index.js ho gi 
+    //- Ya sara copy kia hay pug ki documentation say> include may say doctype say js include tak 
+    //- pura python ki intentation ki thara hota hay 
+    
